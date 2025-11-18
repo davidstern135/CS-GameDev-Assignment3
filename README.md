@@ -2,41 +2,62 @@
 
 A project with step-by-step scenes illustrating some of the formal elements of game development in Unity, including: 
 
-* Prefabs for instantiating new objects;
-* Colliders for triggering outcomes of actions;
-* Coroutines for setting time-based rules.
+משחק חללית - מטלה דגמים וטריגרים
+משחק יריות 2D ב-Unity במסגרת קורס פיתוח משחקים באוניברסיטת אריאל.
 
-Text explanations are available 
-[here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 04.
+🎮 קישורים
 
-## Cloning
-To clone the project, you may need to install git lfs first (if it is not already installed):
-
-    git lfs install 
-
-To clone faster, you can limit the depth to 1 like this:
-
-    git clone --depth=1 https://github.com/<repository-name>.git
-
-When you first open this project, you may not see the text in the score field.
-This is because `TextMeshPro` is not in the project.
-The Unity Editor should hopefully prompt you to import TextMeshPro;
-once you do this, re-open the scenes, and you should be able to see the texts.
+שחק עכשיו: https://davidstern135.itch.io/assignment-3-space-ship
 
 
 
-## Credits
+תכונות שהוספתי
+תכונות מהמטלה:
+תכונה 2: תצוגת ניקוד קבועה
+הניקוד מוצג בפינה השמאלית העליונה של המסך ולא זז עם החללית.
 
-Programming:
-* Maoz Grossman
-* Erel Segal-Halevi
+משתמש ב-Canvas ו-TextMeshPro
 
-Online courses:
-* [The Ultimate Guide to Game Development with Unity 2019](https://www.udemy.com/the-ultimate-guide-to-game-development-with-unity/), by Jonathan Weinberger
+תכונה 5: הגבלה של מהירות וכמות הלייזרים שהחללית יכולה לירות.
+השחקן חייב לחכות בין יריות ויש לו מספר מוגבל של קרני לייזר(ניתן לשינוי בinspector)
 
-Graphics:
-* [Matt Whitehead](https://ccsearch.creativecommons.org/photos/7fd4a37b-8d1a-4d4c-80a2-4ca4a3839941)
-* [Kenney's space kit](https://kenney.nl/assets/space-kit)
-* [Ductman's 2D Animated Spacehips](https://assetstore.unity.com/packages/2d/characters/2d-animated-spaceships-96852)
-* [Franc from the Noun Project](https://commons.wikimedia.org/w/index.php?curid=64661575)
-* [Greek-arrow-animated.gif by Andrikkos is licensed under CC BY-SA 3.0](https://search.creativecommons.org/photos/2db102af-80d0-4ec8-9171-1ac77d2565ce)
+זמן המתנה: חצי שנייה בין יריות
+כדורים בהתחלה: 30
+מונה כדורים מוצג על המסך
+הכדורים מתאפסים כשעוברים לשלב הבא.
+
+
+תכונות מקוריות:
+
+    תכונה ראשונה: 
+תוספת ירי מהיר של ללא הגבלה של מס היריות אבל לזמן מוגבל.
+פריט שאפשר לאסוף שנותן יכולת לירות מהר יותר.
+בנוסף הוספתי שניתן ללחוץ "רווח" בצורה רציפה והחללית תירה על "אוטומט"
+
+
+נמשך 5 שניות ומקטין את זמן ההמתנה בין יריות ל0.1 שניות.
+יש אינדיקטור שמראה שהתוספת פעילה וכמות הזמן שנותר לתוספת.
+
+    תכונה שניה:
+כדורים שנופלים מאויבים:
+כאשר האויבים מושמדים יש סבירות שיפילו מחסנית עם "כדורים"/לייזרים.
+
+סיכוי לנפילה: 20% מכל אויב
+כל פריט נותן חמישה לייזרים
+נעלם אחרי 3 שניות אם לא אוספים אותו.
+
+    שליטה:
+תנועה- נשלט על ידי החיצים
+ירי- מקש ה"רווח"
+
+    גרסה:    
+6000.2.8f1
+
+    איך להריץ:
+
+פתח את הפרויקט ב-Unity
+פתח את הסצנה Level1
+לחץ Play
+
+
+
