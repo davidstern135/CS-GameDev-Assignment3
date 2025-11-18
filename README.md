@@ -5,20 +5,21 @@ A project with step-by-step scenes illustrating some of the formal elements of g
 משחק חללית - מטלה דגמים וטריגרים
 משחק יריות 2D ב-Unity במסגרת קורס פיתוח משחקים באוניברסיטת אריאל.
 
-🎮 קישורים
+ קישורים:
 
 שחק עכשיו: https://davidstern135.itch.io/assignment-3-space-ship
 
 
 
 תכונות שהוספתי
-תכונות מהמטלה:
-תכונה 2: תצוגת ניקוד קבועה
+ תכונות מהמטלה: 
+ 
+תכונה 2:
+תצוגת ניקוד קבועה
 הניקוד מוצג בפינה השמאלית העליונה של המסך ולא זז עם החללית.
 
-משתמש ב-Canvas ו-TextMeshPro
-
-תכונה 5: הגבלה של מהירות וכמות הלייזרים שהחללית יכולה לירות.
+תכונה 5:
+הגבלה של מהירות וכמות הלייזרים שהחללית יכולה לירות.
 השחקן חייב לחכות בין יריות ויש לו מספר מוגבל של קרני לייזר(ניתן לשינוי בinspector)
 
 זמן המתנה: חצי שנייה בין יריות
@@ -29,7 +30,7 @@ A project with step-by-step scenes illustrating some of the formal elements of g
 
 תכונות מקוריות:
 
-    תכונה ראשונה: 
+  תכונה ראשונה: 
 תוספת ירי מהיר של ללא הגבלה של מס היריות אבל לזמן מוגבל.
 פריט שאפשר לאסוף שנותן יכולת לירות מהר יותר.
 בנוסף הוספתי שניתן ללחוץ "רווח" בצורה רציפה והחללית תירה על "אוטומט"
@@ -38,22 +39,21 @@ A project with step-by-step scenes illustrating some of the formal elements of g
 נמשך 5 שניות ומקטין את זמן ההמתנה בין יריות ל0.1 שניות.
 יש אינדיקטור שמראה שהתוספת פעילה וכמות הזמן שנותר לתוספת.
 
-    תכונה שניה:
+   תכונה שניה:
 כדורים שנופלים מאויבים:
 כאשר האויבים מושמדים יש סבירות שיפילו מחסנית עם "כדורים"/לייזרים.
 
 סיכוי לנפילה: 20% מכל אויב
-כל פריט נותן חמישה לייזרים
+כל פריט נותן עשרה לייזרים
 נעלם אחרי 3 שניות אם לא אוספים אותו.
 
-    שליטה:
+  שליטה:
 תנועה- נשלט על ידי החיצים
 ירי- מקש ה"רווח"
 
-    גרסה:    
-6000.2.8f1
+  גרסה:    6000.2.8f1
 
-    איך להריץ:
+  איך להריץ:
 
 פתח את הפרויקט ב-Unity
 פתח את הסצנה Level1
